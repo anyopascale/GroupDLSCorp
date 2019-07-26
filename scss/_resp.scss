@@ -1,0 +1,149 @@
+@media only screen and(max-width: 1100px){
+    .container{
+        padding: 0 1em;
+    }
+}
+@media only screen and(max-width: 1024px){
+    .prdctsss{
+        grid-template-columns: $grd2!important;
+        .paginador{
+            grid-column: span 2!important;
+        }
+    }
+}
+@media only screen and(max-width: 800px){
+    
+    .list_prcdc_relacionados{
+        grid-template-columns: $grd2!important;
+
+    }
+   
+}
+@media only screen and(max-width: 700px){
+    .spc_importaciones{
+        grid-template-columns: $grd1!important;
+        .formss{
+            grid-row: 2;
+        }
+        .contennt_contacttt{
+            margin-bottom: 2em;
+        }
+    }
+    .spc_prdccts{
+        .bar_categss, .prdctsss{
+            grid-column: span 2;
+        }
+        .bar_categss{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-bottom: 2em;
+        }
+       
+    }
+
+    .spc_detalle_prdct{
+        grid-template-columns: $grd1!important;
+        .img_producto{
+            margin: 0 auto;
+        }
+    }
+
+}
+@media only screen and(max-width: 650px){
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 4;
+    }
+    .spc_menu{
+        position: relative;
+        .menu{
+            position: absolute;
+            top: 107%;
+            right: -220px;
+            z-index: 3;
+            flex-direction: column;
+            background-color: white;
+            width: 200px;
+            height: 110vh;
+            transition: .4s;
+            .nrml, .cll, select{
+                background-color: white!important;
+                color: $font_color!important;
+                padding: 1em 0!important;
+            }
+        }
+        
+    }
+    .contrl_resnpnns{
+        display: block!important;
+    }
+   
+    .active_menu{
+        right: -12px!important;
+        box-shadow: -30px 10px 20px rgba(0,0,0,.5);
+    }
+    .sp_categorias, .spc_ventajas{
+        grid-template-columns: $grd2!important;
+        .tiit_ventajas, .spc_btm_more{
+            grid-column: span 2!important;
+        }
+    }
+    .pallx{
+        text-align: center;
+        .tiit_pllx{
+            font-size: 1.5em!important;
+        }
+        h3{
+            font-size: 1.8em!important;
+
+        }
+    }
+    .menu_footer{
+        display: none;
+    }
+    .content_slider{
+        .titt{
+            font-size: 2.5em!important;
+        }
+        .prev_txt{
+            width: 100%!important;
+            line-height: 25px;
+        }
+    }
+}
+@media only screen and(max-width: 500px){
+    .sp_categorias, .spc_ventajas{
+        grid-template-columns: $grd1!important;
+        grid-gap: 4vh!important;
+        .tiit_ventajas, .spc_btm_more{
+            grid-column: span 1!important;
+        }
+    }
+    .box_categoria{
+        border-bottom: 1px solid #f4f4f4;
+        padding-bottom: .5em;
+        .cntrl_immg{
+            .prd_catg{
+                bottom: -100%!important;
+            }
+        }
+        .contttn_catg{
+            padding-top: 150px!important;
+        }
+    }
+    .list_prcdc_relacionados{
+        grid-template-columns: $grd1!important;
+
+    }
+}
+@media only screen and(max-width: 450px){
+    .prdctsss{
+        grid-template-columns: $grd1!important;
+        .paginador{
+            grid-column: span 1!important;
+        }
+    }
+}
