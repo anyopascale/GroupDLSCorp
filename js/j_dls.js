@@ -31,3 +31,6 @@ $('.btm_close_vntnt').click(function(){
 });
 
 
+$('.line_c').click(function(){
+  $(this).toggleClass('active').siblings().removeClass('active');
+})

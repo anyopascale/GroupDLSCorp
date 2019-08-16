@@ -114,6 +114,12 @@
         }
     }
 }
+@media only screen and(max-width: 550px){
+    .bar_categss{
+        grid-template-columns: repeat(2, 1fr)!important;
+        grid-gap: $gap!important;
+    }
+}
 @media only screen and(max-width: 500px){
     .sp_categorias, .spc_ventajas{
         grid-template-columns: $grd1!important;
